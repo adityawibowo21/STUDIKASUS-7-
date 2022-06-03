@@ -149,4 +149,4 @@ int main(){
   x.cek_data();
   x.proses_urut();
   x.proses_cari();
-}
+} 
