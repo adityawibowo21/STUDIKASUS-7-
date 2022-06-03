@@ -4,10 +4,8 @@ using namespace std;
 class Sorting{
 
   private:
-      string nama[50], prodi[20], kata[10];
-      int temp;
-      int nim[10], no_telp[12],cari,pilih;
-      int n;
+      string nama[50], prodi[20];
+      int temp,n,nim[10],no_telp[12],cari,pilih;
       char lanjut;
   
   public:
@@ -32,7 +30,7 @@ void Sorting::input(){
     cout<<"Silahkan di pilih : ";   
     cin>>pilih;
     switch (pilih){
-    case 1 :  //menampilkan isi menu 1. Cek data
+    case 1 :  
       input_data();
       cout<<"Lanjutkan [Y/T] : "; cin>>lanjut;
       if(lanjut=='Y'){
@@ -42,7 +40,7 @@ void Sorting::input(){
       }
       break;
       
-    case 2 :  //menampilkan isi menu 2. Urutkan data
+    case 2 :  
       cek_data();
        cout<<"Lanjutkan [Y/T] : "; cin>>lanjut;
       if(lanjut=='Y'){
@@ -52,7 +50,7 @@ void Sorting::input(){
       }
       break;
       
-    case 3 :  //menampilkan isi menu 3. Cari data
+    case 3 :  
       proses_urut();
        cout<<"Lanjutkan [Y/T] : "; cin>>lanjut;
       if(lanjut=='Y'){
@@ -62,7 +60,7 @@ void Sorting::input(){
       }
       break;
 
-    case 4 :  //menampilkan isi menu 5. selesai
+    case 4 :  
       proses_cari();
       cout<<"Lanjutkan [Y/T] : "; cin>>lanjut;
       if(lanjut=='Y'){
